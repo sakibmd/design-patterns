@@ -4,7 +4,7 @@ class Singleton{
     static $instance;
     function __construct()
     {
-        echo "New Instancce Created <br>";
+        echo "New Instance Created <br>";
     }
 
     static function getInstance(){
@@ -18,5 +18,8 @@ class Singleton{
 }
 
 $sn1 = Singleton::getInstance();
+$sn2 = Singleton::getInstance();
+$sn3 = Singleton::getInstance();
+$sn4 = Singleton::getInstance();
 
 //protect us to create multiple instance which can save our memory space
